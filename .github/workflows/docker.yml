@@ -13,6 +13,6 @@ jobs:
       run: ls -lh && ls -lh ../
       shell: bash
     - name: Build the Docker image
-      run: docker build --no-cache -t wajika/kafka-docker:latest .
+      run: docker build --no-cache -t wajika/kafka-docker:latest ../kafka-docker/
     - name: push hub
       run: docker push wajika/kafka-docker:latest
